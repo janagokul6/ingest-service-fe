@@ -29,7 +29,7 @@ function App() {
 
     try {
       // Note: Assuming proxy or CORS is set up, otherwise this URL might need adjustment
-      const response = await fetch('http://localhost:8000/api/v1/upload', {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE}/api/v1/upload`, {
         method: 'POST',
         body: formData,
       });

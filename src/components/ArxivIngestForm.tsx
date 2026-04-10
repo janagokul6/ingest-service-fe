@@ -3,7 +3,7 @@ import { Search, Loader2, CheckCircle, AlertCircle, X, Plus } from 'lucide-react
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 const PRESET_CATEGORIES = [
     { id: 'cs.CL', label: 'Computational Linguistics' },
